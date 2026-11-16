@@ -38,7 +38,8 @@ API, which also carries more recent years.
 ## Method
 
 - Re-levered beta: βL = βU × [1 + (1 − t) × D/E]
-- Cost of equity = government bond yield of the currency + βL × equity risk premium
+- Cost of equity in USD (CAPM): Re = Rf + βL × equity risk premium
+- Cost of equity in foreign currency: (1 + Re*) = (1 + Re) × (1 + Rf*) / (1 + Rf)
 - Cost of debt = government bond yield of the currency + BBB spread
 - Foreign BBB spread (auto) = USD spread × (1 + foreign yield) / (1 + U.S. yield)
 - WACC = E/V × cost of equity + D/V × cost of debt × (1 − t)

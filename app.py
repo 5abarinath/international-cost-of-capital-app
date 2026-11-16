@@ -11,7 +11,7 @@ import pandas as pd
 import streamlit as st
 
 import data_sources as ds
-from finance import auto_foreign_spread, convert_rate, cost_of_capital
+from finance import auto_foreign_spread, cost_of_capital
 
 US = ds.US
 DEFAULT_INDUSTRY = "Software (System & Application)"
@@ -138,8 +138,7 @@ with st.sidebar:
 # Calculations
 # --------------------------------------------------------------------------
 usd = cost_of_capital(unlevered_beta, tax_rate, debt_share, erp, rf_usd, usd_spread)
-loc = cost_of_capital(unlevered_beta, tax_rate, debt_share, erp, rf_for, for_spread)
-wacc_parity = convert_rate(usd["wacc"], rf_usd, rf_for)
+loc = cost_of_capital(unlevered_beta, tax_rate, debt_share, erp, rf_for, for_spread, rf_usd=rf_usd)
 
 usd_label = "USD"
 loc_label = f"{country} currency" if country != US else "United States currency (USD)"
@@ -193,7 +192,7 @@ for col, label, res, flag in ((left, usd_label, usd, "🇺🇸"), (right, loc_la
 rows = [
     ("Government bond yield (risk-free rate)", "risk_free", pct),
     ("Re-levered beta", "levered_beta", lambda x: f"{x:.2f}"),
-    ("Equity risk premium", None, lambda _: pct(erp)),
+    ("Equity risk premium (USD CAPM)", None, lambda _: pct(erp)),
     ("Cost of equity", "cost_equity", pct),
     ("BBB borrowing spread", "spread", pct),
     ("Cost of debt (pre-tax)", "cost_debt", pct),
@@ -211,13 +210,7 @@ detail = pd.DataFrame(
 )
 st.dataframe(detail, hide_index=True, width='stretch')
 
-if not is_us:
-    st.caption(
-        f"Cross-check: converting the USD WACC with interest rate parity gives "
-        f"**{pct(wacc_parity)}** in {country} currency "
-        f"(vs. {pct(loc['wacc'])} from the build-up above)."
-    )
-else:
+if is_us:
     st.caption("The United States is selected as the target country, so both columns are identical.")
 
 results_csv = pd.DataFrame(
@@ -247,16 +240,17 @@ with tab_assume:
 1. **Beta.** The industry's unlevered beta (Damodaran, U.S. companies) is re-levered
    at the target capital structure: β<sub>L</sub> = β<sub>U</sub> × [1 + (1 − t) × D/E],
    with D/E = {debt_share:.0%} / {1 - debt_share:.0%} = {debt_share / (1 - debt_share):.2f}.
-2. **Cost of equity** = government bond yield of the currency + β<sub>L</sub> × equity risk premium.
-   The **same equity risk premium ({pct(erp, 1)})** and the same beta are used in both
-   currencies, so the two costs of equity differ only by the government-yield differential.
-3. **Cost of debt** = government bond yield of the currency + BBB borrowing spread.
+2. **Cost of equity in USD** (CAPM): R<sub>e</sub> = R<sub>f</sub> + β<sub>L</sub> × ERP, with the
+   U.S. government yield as R<sub>f</sub> and an equity risk premium of {pct(erp, 1)}.
+3. **Cost of equity in the foreign currency**: the USD cost of equity is converted with the
+   ratio of government yields, (1 + R<sub>e</sub>*) = (1 + R<sub>e</sub>) × (1 + R<sub>f</sub>*) / (1 + R<sub>f</sub>).
+   The adjustment reflects the currency's expected depreciation (Fisher equation and relative PPP).
+4. **Cost of debt** = government bond yield of the currency + BBB borrowing spread.
    The USD spread is Damodaran's Baa2/BBB default spread for large non-financial service firms.
-4. **Foreign BBB spread (auto).** Unless overridden, it is the USD spread scaled by interest
-   rate parity: spread<sub>foreign</sub> = spread<sub>USD</sub> × (1 + r<sub>f,foreign</sub>) / (1 + r<sub>f,USD</sub>).
-   That makes the foreign-currency borrowing cost equal to the USD borrowing cost converted
-   at the government-yield differential.
-5. **WACC** = E/V × cost of equity + D/V × cost of debt × (1 − t). The **same project tax
+5. **Foreign BBB spread (auto).** Unless overridden, the same factor is applied to the spread:
+   s* = s × (1 + R<sub>f</sub>*) / (1 + R<sub>f</sub>), so the foreign-currency borrowing rate is the
+   converted USD borrowing rate.
+6. **WACC** = (1 − d) × R<sub>e</sub> + d × R<sub>d</sub> × (1 − τ), computed in each currency. The **same project tax
    rate, debt share and equity risk premium** apply in both currencies; the tax rate is
    either the U.S. or the selected country's combined statutory corporate rate (switch in the sidebar).
 
@@ -265,8 +259,10 @@ with tab_assume:
 - 10-year government bond yields stand in for the risk-free rate in each currency. For
   countries with meaningful sovereign default risk, the local yield includes a default
   premium, which overstates the local-currency risk-free rate.
-- No separate country risk premium is added; if the project is exposed to additional
-  country risk, raise the equity risk premium accordingly.
+- No separate country equity premium is added, and currency risk is treated as
+  diversifiable (no extra premium).
+- Target leverage stays constant, interest deductions are fully usable, and re-levering
+  assumes a zero debt beta.
 - Industry betas are averages of U.S.-listed firms and are assumed to apply to the project
   regardless of where it is located.
 - Tax rates are statutory (central + sub-central government), not effective rates.
@@ -279,7 +275,7 @@ with tab_all:
     usd_all = comp["unlevered_beta"].apply(
         lambda b: cost_of_capital(b, tax_rate, debt_share, erp, rf_usd, usd_spread))
     loc_all = comp["unlevered_beta"].apply(
-        lambda b: cost_of_capital(b, tax_rate, debt_share, erp, rf_for, for_spread))
+        lambda b: cost_of_capital(b, tax_rate, debt_share, erp, rf_for, for_spread, rf_usd=rf_usd))
     comp["levered_beta"] = usd_all.apply(lambda r: r["levered_beta"])
     comp["ke_usd"] = usd_all.apply(lambda r: r["cost_equity"]) * 100
     comp["wacc_usd"] = usd_all.apply(lambda r: r["wacc"]) * 100

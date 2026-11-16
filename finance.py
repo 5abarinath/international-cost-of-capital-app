@@ -9,17 +9,12 @@ def relever_beta(unlevered_beta: float, tax_rate: float, debt_share: float) -> f
 
 
 def auto_foreign_spread(usd_spread: float, rf_usd: float, rf_foreign: float) -> float:
-    """Foreign-currency BBB spread implied by interest rate parity.
-
-    The USD borrowing cost (rf_usd + spread) is converted to the foreign
-    currency with the government-yield differential; the spread is what is
-    left above the foreign government yield.
-    """
+    """Foreign-currency BBB spread: s* = s (1 + Rf*) / (1 + Rf)."""
     return usd_spread * (1 + rf_foreign) / (1 + rf_usd)
 
 
 def convert_rate(rate_usd: float, rf_usd: float, rf_foreign: float) -> float:
-    """Convert a USD rate to the foreign currency via interest rate parity."""
+    """(1 + R*) = (1 + R) (1 + Rf*) / (1 + Rf)."""
     return (1 + rate_usd) * (1 + rf_foreign) / (1 + rf_usd) - 1
 
 
@@ -30,10 +25,19 @@ def cost_of_capital(
     erp: float,
     rf: float,
     spread: float,
+    rf_usd: float | None = None,
 ) -> dict:
-    """Cost of equity, cost of debt and WACC in the currency of `rf`."""
+    """Cost of equity, cost of debt and WACC in the currency of `rf`.
+
+    For USD, pass only `rf` (the U.S. yield): cost of equity is CAPM.
+    For a foreign currency, also pass `rf_usd`: the USD CAPM cost of equity
+    is converted with (1 + Re*) = (1 + Re) (1 + Rf*) / (1 + Rf).
+    """
     beta = relever_beta(unlevered_beta, tax_rate, debt_share)
-    cost_equity = rf + beta * erp
+    if rf_usd is None:
+        cost_equity = rf + beta * erp
+    else:
+        cost_equity = convert_rate(rf_usd + beta * erp, rf_usd, rf)
     cost_debt = rf + spread
     after_tax_debt = cost_debt * (1 - tax_rate)
     wacc = (1 - debt_share) * cost_equity + debt_share * after_tax_debt
