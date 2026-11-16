@@ -170,7 +170,11 @@ def fetch_tax_rates() -> dict:
     ]
     latest = df.sort_values("TIME_PERIOD").groupby("REF_AREA").tail(1)
     rates = {
-        _country(r.REF_AREA): {"rate": float(r.OBS_VALUE) / 100, "year": int(r.TIME_PERIOD)}
+        _country(r.REF_AREA): {
+            "rate": float(r.OBS_VALUE) / 100,
+            "year": int(r.TIME_PERIOD),
+            "iso3": r.REF_AREA.split(":")[0],
+        }
         for r in latest.itertuples()
     }
     if US not in rates or len(rates) < 30:

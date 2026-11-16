@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import altair as alt
 import pandas as pd
+import pycountry
 import streamlit as st
 
 import data_sources as ds
@@ -24,6 +25,14 @@ st.set_page_config(page_title="International Cost of Capital", page_icon="🌍",
 @st.cache_data(ttl=24 * 3600, show_spinner="Fetching latest data…")
 def get_data() -> dict:
     return ds.load_all()
+
+
+def flag(iso3: str | None) -> str:
+    """Flag emoji for an ISO 3166 alpha-3 code; globe if the code is unknown."""
+    match = pycountry.countries.get(alpha_3=iso3) if iso3 else None
+    if not match:
+        return "🌐"
+    return "".join(chr(0x1F1E6 + ord(c) - ord("A")) for c in match.alpha_2)
 
 
 def pct(x: float, digits: int = 2) -> str:
@@ -170,7 +179,7 @@ if stale:
 # --------------------------------------------------------------------------
 # Results side by side
 # --------------------------------------------------------------------------
-st.subheader(f"{industry} · {country}")
+st.subheader(f"{industry} · {flag(tax_rates[country].get('iso3'))} {country}")
 
 tax_note = "manual input" if tax_manual else f"{tax_country}, OECD {tax_rates[tax_country]['year']}"
 i1, i2, i3, i4 = st.columns(4)
@@ -180,9 +189,10 @@ i3.metric(f"Project tax rate ({tax_note})", pct(tax_rate))
 i4.metric("Debt / Equity share", f"{debt_share:.0%} / {1 - debt_share:.0%}")
 
 left, right = st.columns(2, gap="large")
-for col, label, res, flag in ((left, usd_label, usd, "🇺🇸"), (right, loc_label, loc, "🌐")):
+flags = (flag("USA"), flag(tax_rates[country].get("iso3")))
+for col, label, res, flag_icon in ((left, usd_label, usd, flags[0]), (right, loc_label, loc, flags[1])):
     with col, st.container(border=True):
-        st.markdown(f"### {flag} {label}")
+        st.markdown(f"### {flag_icon} {label}")
         m1, m2, m3 = st.columns(3)
         delta = None if label == usd_label or is_us else f"{(res['wacc'] - usd['wacc']) * 100:+.2f} pp vs USD"
         m1.metric("WACC", pct(res["wacc"]), delta, delta_color="off", delta_arrow="off")

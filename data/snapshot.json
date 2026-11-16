@@ -3,7 +3,7 @@
   "source": "Aswath Damodaran (NYU Stern) – Betas by Sector (US)",
   "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/betas.xls",
   "as_of": "2026-01-05",
-  "fetched_at": "2026-11-16 09:47 UTC",
+  "fetched_at": "2026-11-16 12:48 UTC",
   "industries": [
    {
     "industry": "Advertising",
@@ -683,7 +683,7 @@
   "source": "Aswath Damodaran (NYU Stern) – Ratings, Interest Coverage Ratios and Default Spread (Baa2/BBB, large non-financial service firms)",
   "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ratings.html",
   "as_of": "January 2026",
-  "fetched_at": "2026-11-16 09:47 UTC",
+  "fetched_at": "2026-11-16 12:48 UTC",
   "spread": 0.0111
  },
  "tax_rates": {
@@ -691,591 +691,737 @@
   "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_TAX_CIT%40DF_CIT&df[ag]=OECD.CTP.TPS",
   "report_url": "https://www.oecd.org/en/publications/corporate-tax-statistics-2024_9c27d6e8-en/full-report/statutory-corporate-income-tax-rates_440f9286.html",
   "as_of": "2026",
-  "fetched_at": "2026-11-16 09:47 UTC",
+  "fetched_at": "2026-11-16 12:48 UTC",
   "rates": {
    "Colombia": {
     "rate": 0.35,
-    "year": 2025
+    "year": 2025,
+    "iso3": "COL"
    },
    "Turkey": {
     "rate": 0.25,
-    "year": 2025
+    "year": 2025,
+    "iso3": "TUR"
    },
    "Israel": {
     "rate": 0.23,
-    "year": 2025
+    "year": 2025,
+    "iso3": "ISR"
    },
    "Democratic Republic of the Congo": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "COD"
    },
    "Benin": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BEN"
    },
    "Jersey": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "JEY"
    },
    "Anguilla": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "AIA"
    },
    "Bahamas": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BHS"
    },
    "Bahrain": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BHR"
    },
    "Bailiwick of Guernsey": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "GGY"
    },
    "Belize": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BLZ"
    },
    "Bermuda": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BMU"
    },
    "British Virgin Islands": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "VGB"
    },
    "Cayman Islands": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CYM"
    },
    "Isle of Man": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "IMN"
    },
    "Kenya": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "KEN"
    },
    "Montserrat": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MSR"
    },
    "Nigeria": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "NGA"
    },
    "Papua New Guinea": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "PNG"
    },
    "Saint Lucia": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "LCA"
    },
    "Senegal": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SEN"
    },
    "Mexico": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MEX"
    },
    "Sri Lanka": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "LKA"
    },
    "Trinidad and Tobago": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "TTO"
    },
    "Zambia": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ZMB"
    },
    "Australia": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "AUS"
    },
    "Gabon": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "GAB"
    },
    "Haiti": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "HTI"
    },
    "Costa Rica": {
     "rate": 0.3,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CRI"
    },
    "Turks and Caicos Islands": {
     "rate": 0.0,
-    "year": 2026
+    "year": 2026,
+    "iso3": "TCA"
    },
    "Norway": {
     "rate": 0.22,
-    "year": 2026
+    "year": 2026,
+    "iso3": "NOR"
    },
    "Slovenia": {
     "rate": 0.22,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SVN"
    },
    "Curaçao": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CUW"
    },
    "Georgia": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "GEO"
    },
    "New Zealand": {
     "rate": 0.28,
-    "year": 2026
+    "year": 2026,
+    "iso3": "NZL"
    },
    "Botswana": {
     "rate": 0.22,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BWA"
    },
    "Brazil": {
     "rate": 0.34,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BRA"
    },
    "Brunei Darussalam": {
     "rate": 0.185,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BRN"
    },
    "Bulgaria": {
     "rate": 0.1,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BGR"
    },
    "Burkina Faso": {
     "rate": 0.275,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BFA"
    },
    "Cabo Verde": {
     "rate": 0.204,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CPV"
    },
    "Cameroon": {
     "rate": 0.33,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CMR"
    },
    "Congo": {
     "rate": 0.28,
-    "year": 2026
+    "year": 2026,
+    "iso3": "COG"
    },
    "Croatia": {
     "rate": 0.18,
-    "year": 2026
+    "year": 2026,
+    "iso3": "HRV"
    },
    "Dominican Republic": {
     "rate": 0.27,
-    "year": 2026
+    "year": 2026,
+    "iso3": "DOM"
    },
    "Egypt": {
     "rate": 0.225,
-    "year": 2026
+    "year": 2026,
+    "iso3": "EGY"
    },
    "Faroe Islands": {
     "rate": 0.18,
-    "year": 2026
+    "year": 2026,
+    "iso3": "FRO"
    },
    "Greenland": {
     "rate": 0.265,
-    "year": 2026
+    "year": 2026,
+    "iso3": "GRL"
    },
    "Grenada": {
     "rate": 0.28,
-    "year": 2026
+    "year": 2026,
+    "iso3": "GRD"
    },
    "Saint Kitts and Nevis": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "KNA"
    },
    "Eswatini": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SWZ"
    },
    "Fiji": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "FJI"
    },
    "Guatemala": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "GTM"
    },
    "Honduras": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "HND"
    },
    "Jamaica": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "JAM"
    },
    "Bosnia and Herzegovina": {
     "rate": 0.1,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BIH"
    },
    "Liberia": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "LBR"
    },
    "Mauritania": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MRT"
    },
    "Monaco": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MCO"
    },
    "Mongolia": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MNG"
    },
    "Panama": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "PAN"
    },
    "Philippines": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "PHL"
    },
    "Seychelles": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SYC"
    },
    "Sierra Leone": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SLE"
    },
    "Uruguay": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "URY"
    },
    "Andorra": {
     "rate": 0.1,
-    "year": 2026
+    "year": 2026,
+    "iso3": "AND"
    },
    "Armenia": {
     "rate": 0.18,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ARM"
    },
    "Aruba": {
     "rate": 0.22,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ABW"
    },
    "Barbados": {
     "rate": 0.09,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BRB"
    },
    "Gibraltar": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "GIB"
    },
    "Albania": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ALB"
    },
    "Pakistan": {
     "rate": 0.29,
-    "year": 2026
+    "year": 2026,
+    "iso3": "PAK"
    },
    "Paraguay": {
     "rate": 0.1,
-    "year": 2026
+    "year": 2026,
+    "iso3": "PRY"
    },
    "Hong Kong": {
     "rate": 0.165,
-    "year": 2026
+    "year": 2026,
+    "iso3": "HKG"
    },
    "India": {
     "rate": 0.25170000000000003,
-    "year": 2026
+    "year": 2026,
+    "iso3": "IND"
    },
    "Indonesia": {
     "rate": 0.22,
-    "year": 2026
+    "year": 2026,
+    "iso3": "IDN"
    },
    "Liechtenstein": {
     "rate": 0.125,
-    "year": 2026
+    "year": 2026,
+    "iso3": "LIE"
    },
    "Macau": {
     "rate": 0.12,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MAC"
    },
    "Malaysia": {
     "rate": 0.24,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MYS"
    },
    "Moldova": {
     "rate": 0.12,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MDA"
    },
    "Namibia": {
     "rate": 0.32,
-    "year": 2026
+    "year": 2026,
+    "iso3": "NAM"
    },
    "North Macedonia": {
     "rate": 0.1,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MKD"
    },
    "Estonia": {
     "rate": 0.22,
-    "year": 2026
+    "year": 2026,
+    "iso3": "EST"
    },
    "Greece": {
     "rate": 0.22,
-    "year": 2026
+    "year": 2026,
+    "iso3": "GRC"
    },
    "Poland": {
     "rate": 0.19,
-    "year": 2026
+    "year": 2026,
+    "iso3": "POL"
    },
    "Romania": {
     "rate": 0.16,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ROU"
    },
    "Saint Vincent and the Grenadines": {
     "rate": 0.28,
-    "year": 2026
+    "year": 2026,
+    "iso3": "VCT"
    },
    "Samoa": {
     "rate": 0.27,
-    "year": 2026
+    "year": 2026,
+    "iso3": "WSM"
    },
    "San Marino": {
     "rate": 0.18,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SMR"
    },
    "Singapore": {
     "rate": 0.17,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SGP"
    },
    "South Africa": {
     "rate": 0.27,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ZAF"
    },
    "Denmark": {
     "rate": 0.22,
-    "year": 2026
+    "year": 2026,
+    "iso3": "DNK"
    },
    "Montenegro": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MNE"
    },
    "Kuwait": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "KWT"
    },
    "Maldives": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MDV"
    },
    "Uzbekistan": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "UZB"
    },
    "Oman": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "OMN"
    },
    "Serbia": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SRB"
    },
    "Mauritius": {
     "rate": 0.15,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MUS"
    },
    "Angola": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "AGO"
    },
    "Antigua and Barbuda": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ATG"
    },
    "China": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CHN"
    },
    "Côte d’Ivoire": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CIV"
    },
    "Djibouti": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "DJI"
    },
    "Dominica": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "DMA"
    },
    "Chile": {
     "rate": 0.27,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CHL"
    },
    "Togo": {
     "rate": 0.27,
-    "year": 2026
+    "year": 2026,
+    "iso3": "TGO"
    },
    "Ukraine": {
     "rate": 0.18,
-    "year": 2026
+    "year": 2026,
+    "iso3": "UKR"
    },
    "United Arab Emirates": {
     "rate": 0.09,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ARE"
    },
    "Austria": {
     "rate": 0.23,
-    "year": 2026
+    "year": 2026,
+    "iso3": "AUT"
    },
    "Peru": {
     "rate": 0.295,
-    "year": 2026
+    "year": 2026,
+    "iso3": "PER"
    },
    "Qatar": {
     "rate": 0.1,
-    "year": 2026
+    "year": 2026,
+    "iso3": "QAT"
    },
    "Czechia": {
     "rate": 0.21,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CZE"
    },
    "France": {
     "rate": 0.3613,
-    "year": 2026
+    "year": 2026,
+    "iso3": "FRA"
    },
    "Canada": {
     "rate": 0.26,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CAN"
    },
    "Ireland": {
     "rate": 0.125,
-    "year": 2026
+    "year": 2026,
+    "iso3": "IRL"
    },
    "Germany": {
     "rate": 0.30133026,
-    "year": 2026
+    "year": 2026,
+    "iso3": "DEU"
    },
    "Hungary": {
     "rate": 0.09,
-    "year": 2026
+    "year": 2026,
+    "iso3": "HUN"
    },
    "Spain": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ESP"
    },
    "United Kingdom": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "GBR"
    },
    "Belgium": {
     "rate": 0.25,
-    "year": 2026
+    "year": 2026,
+    "iso3": "BEL"
    },
    "Argentina": {
     "rate": 0.35,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ARG"
    },
    "Malta": {
     "rate": 0.35,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MLT"
    },
    "Morocco": {
     "rate": 0.35,
-    "year": 2026
+    "year": 2026,
+    "iso3": "MAR"
    },
    "Viet Nam": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "VNM"
    },
    "Azerbaijan": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "AZE"
    },
    "Cook Islands": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "COK"
    },
    "Jordan": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "JOR"
    },
    "Kazakhstan": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "KAZ"
    },
    "Saudi Arabia": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SAU"
    },
    "Finland": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "FIN"
    },
    "Iceland": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ISL"
    },
    "Latvia": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "LVA"
    },
    "Thailand": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "THA"
    },
    "Tunisia": {
     "rate": 0.2,
-    "year": 2026
+    "year": 2026,
+    "iso3": "TUN"
    },
    "Lithuania": {
     "rate": 0.17,
-    "year": 2026
+    "year": 2026,
+    "iso3": "LTU"
    },
    "Luxembourg": {
     "rate": 0.23870000000000002,
-    "year": 2026
+    "year": 2026,
+    "iso3": "LUX"
    },
    "Italy": {
     "rate": 0.2781,
-    "year": 2026
+    "year": 2026,
+    "iso3": "ITA"
    },
    "Japan": {
     "rate": 0.2974,
-    "year": 2026
+    "year": 2026,
+    "iso3": "JPN"
    },
    "South Korea": {
     "rate": 0.275,
-    "year": 2026
+    "year": 2026,
+    "iso3": "KOR"
    },
    "Netherlands": {
     "rate": 0.258,
-    "year": 2026
+    "year": 2026,
+    "iso3": "NLD"
    },
    "Portugal": {
     "rate": 0.295,
-    "year": 2026
+    "year": 2026,
+    "iso3": "PRT"
    },
    "Switzerland": {
     "rate": 0.19471871,
-    "year": 2026
+    "year": 2026,
+    "iso3": "CHE"
    },
    "United States": {
     "rate": 0.255285,
-    "year": 2026
+    "year": 2026,
+    "iso3": "USA"
    },
    "Slovakia": {
     "rate": 0.24,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SVK"
    },
    "Sweden": {
     "rate": 0.20600000000000002,
-    "year": 2026
+    "year": 2026,
+    "iso3": "SWE"
    }
   }
  },
@@ -1283,7 +1429,7 @@
   "source": "OECD Main Economic Indicators – long-term (10-year) government bond yields, monthly average",
   "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_STES%40DF_FINMARK&df[ag]=OECD.SDD.STES",
   "as_of": "2026-10",
-  "fetched_at": "2026-11-16 09:47 UTC",
+  "fetched_at": "2026-11-16 12:49 UTC",
   "yields": {
    "China": {
     "yield": 0.0168,
