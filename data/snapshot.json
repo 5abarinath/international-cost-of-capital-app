@@ -1,0 +1,1462 @@
+{
+ "betas": {
+  "source": "Aswath Damodaran (NYU Stern) – Betas by Sector (US)",
+  "url": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/betas.xls",
+  "as_of": "2026-01-05",
+  "fetched_at": "2026-11-16 09:47 UTC",
+  "industries": [
+   {
+    "industry": "Advertising",
+    "n_firms": 52,
+    "levered_beta": 1.210506967409714,
+    "de_ratio": 0.4020006635676013,
+    "unlevered_beta": 0.930085673859911
+   },
+   {
+    "industry": "Aerospace/Defense",
+    "n_firms": 79,
+    "levered_beta": 0.945491480030761,
+    "de_ratio": 0.1556259774178424,
+    "unlevered_beta": 0.846668742124111
+   },
+   {
+    "industry": "Air Transport",
+    "n_firms": 23,
+    "levered_beta": 1.185465100406711,
+    "de_ratio": 0.91170567766528,
+    "unlevered_beta": 0.7040501862693873
+   },
+   {
+    "industry": "Apparel",
+    "n_firms": 35,
+    "levered_beta": 0.9358744642979875,
+    "de_ratio": 0.31292274379874546,
+    "unlevered_beta": 0.7579820882045375
+   },
+   {
+    "industry": "Auto & Truck",
+    "n_firms": 33,
+    "levered_beta": 1.4564933048347815,
+    "de_ratio": 0.19695879853744616,
+    "unlevered_beta": 1.2690329072913427
+   },
+   {
+    "industry": "Auto Parts",
+    "n_firms": 35,
+    "levered_beta": 1.3394463651948414,
+    "de_ratio": 0.4146400386187307,
+    "unlevered_beta": 1.0217137832780625
+   },
+   {
+    "industry": "Bank (Money Center)",
+    "n_firms": 15,
+    "levered_beta": 0.7610461819725333,
+    "de_ratio": 1.6418966357638234,
+    "unlevered_beta": 0.3410587595479105
+   },
+   {
+    "industry": "Banks (Regional)",
+    "n_firms": 568,
+    "levered_beta": 0.3984765556409175,
+    "de_ratio": 0.5210229274429405,
+    "unlevered_beta": 0.2865156418030888
+   },
+   {
+    "industry": "Beverage (Alcoholic)",
+    "n_firms": 14,
+    "levered_beta": 0.8124756277132766,
+    "de_ratio": 0.4333840741223201,
+    "unlevered_beta": 0.6131715419678557
+   },
+   {
+    "industry": "Beverage (Soft)",
+    "n_firms": 27,
+    "levered_beta": 0.6414687070147179,
+    "de_ratio": 0.20587118525522147,
+    "unlevered_beta": 0.5556711918551647
+   },
+   {
+    "industry": "Broadcasting",
+    "n_firms": 24,
+    "levered_beta": 0.47075204848634544,
+    "de_ratio": 0.8585429035988935,
+    "unlevered_beta": 0.28636169661672445
+   },
+   {
+    "industry": "Brokerage & Investment Banking",
+    "n_firms": 32,
+    "levered_beta": 1.171457071047836,
+    "de_ratio": 1.3557362534403625,
+    "unlevered_beta": 0.5808487698048416
+   },
+   {
+    "industry": "Building Materials",
+    "n_firms": 41,
+    "levered_beta": 1.1115321733442423,
+    "de_ratio": 0.25998303924525584,
+    "unlevered_beta": 0.9301623477287291
+   },
+   {
+    "industry": "Business & Consumer Services",
+    "n_firms": 155,
+    "levered_beta": 0.8879785335242745,
+    "de_ratio": 0.19716100170472986,
+    "unlevered_beta": 0.7735875598670026
+   },
+   {
+    "industry": "Cable TV",
+    "n_firms": 9,
+    "levered_beta": 0.7407444081777597,
+    "de_ratio": 1.469394514839746,
+    "unlevered_beta": 0.3523921209643926
+   },
+   {
+    "industry": "Chemical (Basic)",
+    "n_firms": 29,
+    "levered_beta": 1.0122471500989898,
+    "de_ratio": 0.9935397565078776,
+    "unlevered_beta": 0.5800328658623819
+   },
+   {
+    "industry": "Chemical (Diversified)",
+    "n_firms": 4,
+    "levered_beta": 0.8507028562562596,
+    "de_ratio": 1.7610998877970157,
+    "unlevered_beta": 0.36655193179254153
+   },
+   {
+    "industry": "Chemical (Specialty)",
+    "n_firms": 59,
+    "levered_beta": 0.9697828817775749,
+    "de_ratio": 0.29882962373710314,
+    "unlevered_beta": 0.7922271711710575
+   },
+   {
+    "industry": "Coal & Related Energy",
+    "n_firms": 16,
+    "levered_beta": 1.0709931914897641,
+    "de_ratio": 0.07142984737214478,
+    "unlevered_beta": 1.0165349872490315
+   },
+   {
+    "industry": "Computer Services",
+    "n_firms": 64,
+    "levered_beta": 1.0878559034733686,
+    "de_ratio": 0.25100122596094754,
+    "unlevered_beta": 0.9155102559970569
+   },
+   {
+    "industry": "Computers/Peripherals",
+    "n_firms": 36,
+    "levered_beta": 1.3503292085851684,
+    "de_ratio": 0.04624738158842277,
+    "unlevered_beta": 1.3050624188250832
+   },
+   {
+    "industry": "Construction Supplies",
+    "n_firms": 40,
+    "levered_beta": 1.1503560568511637,
+    "de_ratio": 0.17621949339337503,
+    "unlevered_beta": 1.0160678372067562
+   },
+   {
+    "industry": "Diversified",
+    "n_firms": 20,
+    "levered_beta": 0.8809551761105191,
+    "de_ratio": 0.15552702199112797,
+    "unlevered_beta": 0.7889302024061987
+   },
+   {
+    "industry": "Drugs (Biotechnology)",
+    "n_firms": 496,
+    "levered_beta": 1.1352650325488571,
+    "de_ratio": 0.13039813617119383,
+    "unlevered_beta": 1.034128692045902
+   },
+   {
+    "industry": "Drugs (Pharmaceutical)",
+    "n_firms": 228,
+    "levered_beta": 0.9828330980612211,
+    "de_ratio": 0.14537075884184583,
+    "unlevered_beta": 0.8862112018778732
+   },
+   {
+    "industry": "Education",
+    "n_firms": 32,
+    "levered_beta": 0.7809055888612572,
+    "de_ratio": 0.24378635749927063,
+    "unlevered_beta": 0.6601955817730791
+   },
+   {
+    "industry": "Electrical Equipment",
+    "n_firms": 112,
+    "levered_beta": 1.2511238546074688,
+    "de_ratio": 0.12003228885644493,
+    "unlevered_beta": 1.1477945494288007
+   },
+   {
+    "industry": "Electronics (Consumer & Office)",
+    "n_firms": 8,
+    "levered_beta": 0.8659780184815811,
+    "de_ratio": 0.058043138538441966,
+    "unlevered_beta": 0.8298525821858579
+   },
+   {
+    "industry": "Electronics (General)",
+    "n_firms": 114,
+    "levered_beta": 0.9714771307987942,
+    "de_ratio": 0.1101176648064408,
+    "unlevered_beta": 0.8973653021365886
+   },
+   {
+    "industry": "Engineering/Construction",
+    "n_firms": 48,
+    "levered_beta": 1.2099722611351151,
+    "de_ratio": 0.1401147535589371,
+    "unlevered_beta": 1.094912241925567
+   },
+   {
+    "industry": "Entertainment",
+    "n_firms": 92,
+    "levered_beta": 0.8251696372652437,
+    "de_ratio": 0.15913861576824234,
+    "unlevered_beta": 0.7371838269272858
+   },
+   {
+    "industry": "Environmental & Waste Services",
+    "n_firms": 53,
+    "levered_beta": 0.9454812982377585,
+    "de_ratio": 0.2144746613305266,
+    "unlevered_beta": 0.814469065497658
+   },
+   {
+    "industry": "Farming/Agriculture",
+    "n_firms": 35,
+    "levered_beta": 1.1291737409456368,
+    "de_ratio": 0.5184849801548149,
+    "unlevered_beta": 0.8130198178522071
+   },
+   {
+    "industry": "Financial Svcs. (Non-bank & Insurance)",
+    "n_firms": 176,
+    "levered_beta": 0.9697132427444908,
+    "de_ratio": 2.721299675975284,
+    "unlevered_beta": 0.3188823716863237
+   },
+   {
+    "industry": "Food Processing",
+    "n_firms": 78,
+    "levered_beta": 0.6074530378003583,
+    "de_ratio": 0.43733857874231813,
+    "unlevered_beta": 0.45741810112318915
+   },
+   {
+    "industry": "Food Wholesalers",
+    "n_firms": 13,
+    "levered_beta": 0.866641638658665,
+    "de_ratio": 0.4696855126722596,
+    "unlevered_beta": 0.6408819228030607
+   },
+   {
+    "industry": "Furn/Home Furnishings",
+    "n_firms": 27,
+    "levered_beta": 0.8231584740017082,
+    "de_ratio": 0.42333374568083953,
+    "unlevered_beta": 0.6247880689027374
+   },
+   {
+    "industry": "Green & Renewable Energy",
+    "n_firms": 15,
+    "levered_beta": 0.8563295187054536,
+    "de_ratio": 1.1310960720897125,
+    "unlevered_beta": 0.46330103394106914
+   },
+   {
+    "industry": "Healthcare Products",
+    "n_firms": 204,
+    "levered_beta": 0.9085611350704943,
+    "de_ratio": 0.12785158403919683,
+    "unlevered_beta": 0.829063339182968
+   },
+   {
+    "industry": "Healthcare Support Services",
+    "n_firms": 104,
+    "levered_beta": 0.8719538873399333,
+    "de_ratio": 0.354253188687874,
+    "unlevered_beta": 0.6889158973179456
+   },
+   {
+    "industry": "Heathcare Information and Technology",
+    "n_firms": 115,
+    "levered_beta": 1.1083338991481437,
+    "de_ratio": 0.1574134360720486,
+    "unlevered_beta": 0.9913008450033202
+   },
+   {
+    "industry": "Homebuilding",
+    "n_firms": 30,
+    "levered_beta": 0.9106178132748846,
+    "de_ratio": 0.21344150553857202,
+    "unlevered_beta": 0.7849604569802948
+   },
+   {
+    "industry": "Hospitals/Healthcare Facilities",
+    "n_firms": 31,
+    "levered_beta": 0.7996783314027625,
+    "de_ratio": 0.5992038400269105,
+    "unlevered_beta": 0.5517295035260499
+   },
+   {
+    "industry": "Hotel/Gaming",
+    "n_firms": 63,
+    "levered_beta": 1.0803675683074194,
+    "de_ratio": 0.39750202770666376,
+    "unlevered_beta": 0.8322513645728964
+   },
+   {
+    "industry": "Household Products",
+    "n_firms": 110,
+    "levered_beta": 0.8155158251324154,
+    "de_ratio": 0.18147628375519134,
+    "unlevered_beta": 0.7178159032286779
+   },
+   {
+    "industry": "Information Services",
+    "n_firms": 15,
+    "levered_beta": 0.9205673234850804,
+    "de_ratio": 0.3316984905170498,
+    "unlevered_beta": 0.7371769598623608
+   },
+   {
+    "industry": "Insurance (General)",
+    "n_firms": 21,
+    "levered_beta": 0.6719750422408106,
+    "de_ratio": 0.2562761358769038,
+    "unlevered_beta": 0.5636395230036526
+   },
+   {
+    "industry": "Insurance (Life)",
+    "n_firms": 20,
+    "levered_beta": 0.6444930925180267,
+    "de_ratio": 0.6783987776748907,
+    "unlevered_beta": 0.4271563388858468
+   },
+   {
+    "industry": "Insurance (Prop/Cas.)",
+    "n_firms": 57,
+    "levered_beta": 0.4841100151289049,
+    "de_ratio": 0.1482928711512957,
+    "unlevered_beta": 0.43565645519640217
+   },
+   {
+    "industry": "Investments & Asset Management",
+    "n_firms": 283,
+    "levered_beta": 0.6595817512663942,
+    "de_ratio": 0.3268818496772947,
+    "unlevered_beta": 0.5297158729912839
+   },
+   {
+    "industry": "Machinery",
+    "n_firms": 105,
+    "levered_beta": 0.9636207903494385,
+    "de_ratio": 0.14692301552763604,
+    "unlevered_beta": 0.8679764970807725
+   },
+   {
+    "industry": "Metals & Mining",
+    "n_firms": 73,
+    "levered_beta": 1.0430314762308461,
+    "de_ratio": 0.10984521282049067,
+    "unlevered_beta": 0.963642813760502
+   },
+   {
+    "industry": "Office Equipment & Services",
+    "n_firms": 14,
+    "levered_beta": 1.334375038621748,
+    "de_ratio": 0.4810247634925184,
+    "unlevered_beta": 0.980603950937201
+   },
+   {
+    "industry": "Oil/Gas (Integrated)",
+    "n_firms": 4,
+    "levered_beta": 0.2993819796439979,
+    "de_ratio": 0.13845002805508974,
+    "unlevered_beta": 0.2712192455295165
+   },
+   {
+    "industry": "Oil/Gas (Production and Exploration)",
+    "n_firms": 142,
+    "levered_beta": 0.72140595546977,
+    "de_ratio": 0.37587625587778695,
+    "unlevered_beta": 0.562759894026207
+   },
+   {
+    "industry": "Oil/Gas Distribution",
+    "n_firms": 23,
+    "levered_beta": 0.6692224517144899,
+    "de_ratio": 0.5852713715207659,
+    "unlevered_beta": 0.4650757918129057
+   },
+   {
+    "industry": "Oilfield Svcs/Equip.",
+    "n_firms": 97,
+    "levered_beta": 0.9512418716285248,
+    "de_ratio": 0.37360623860545034,
+    "unlevered_beta": 0.7430388962534321
+   },
+   {
+    "industry": "Packaging & Container",
+    "n_firms": 19,
+    "levered_beta": 1.0219297750432532,
+    "de_ratio": 0.55109591650755,
+    "unlevered_beta": 0.7230693503118022
+   },
+   {
+    "industry": "Paper/Forest Products",
+    "n_firms": 6,
+    "levered_beta": 0.9579784309693652,
+    "de_ratio": 0.43688176160689357,
+    "unlevered_beta": 0.7215533176034462
+   },
+   {
+    "industry": "Power",
+    "n_firms": 46,
+    "levered_beta": 0.4824326713170223,
+    "de_ratio": 0.7414865026995126,
+    "unlevered_beta": 0.31002381536217716
+   },
+   {
+    "industry": "Precious Metals",
+    "n_firms": 56,
+    "levered_beta": 0.8365606512291942,
+    "de_ratio": 0.07281104300881082,
+    "unlevered_beta": 0.7932430128835662
+   },
+   {
+    "industry": "Publishing & Newspapers",
+    "n_firms": 19,
+    "levered_beta": 0.563007176601541,
+    "de_ratio": 0.2393987480231246,
+    "unlevered_beta": 0.47730712965508676
+   },
+   {
+    "industry": "R.E.I.T.",
+    "n_firms": 190,
+    "levered_beta": 0.6417984635762964,
+    "de_ratio": 0.844629934379348,
+    "unlevered_beta": 0.39290436962561487
+   },
+   {
+    "industry": "Real Estate (Development)",
+    "n_firms": 14,
+    "levered_beta": 0.8435660615974878,
+    "de_ratio": 1.0182937484544488,
+    "unlevered_beta": 0.4782878873556669
+   },
+   {
+    "industry": "Real Estate (General/Diversified)",
+    "n_firms": 12,
+    "levered_beta": 0.8099864769457396,
+    "de_ratio": 0.5356019016772732,
+    "unlevered_beta": 0.57785949402086
+   },
+   {
+    "industry": "Real Estate (Operations & Services)",
+    "n_firms": 54,
+    "levered_beta": 0.9654974066610451,
+    "de_ratio": 0.24642281273824773,
+    "unlevered_beta": 0.8148915126864962
+   },
+   {
+    "industry": "Recreation",
+    "n_firms": 49,
+    "levered_beta": 1.0234727002249695,
+    "de_ratio": 0.6299053181462322,
+    "unlevered_beta": 0.6950913817523879
+   },
+   {
+    "industry": "Reinsurance",
+    "n_firms": 1,
+    "levered_beta": 0.5813323223955235,
+    "de_ratio": 0.4346722815513458,
+    "unlevered_beta": 0.43840910722706555
+   },
+   {
+    "industry": "Restaurant/Dining",
+    "n_firms": 64,
+    "levered_beta": 0.9240873147803257,
+    "de_ratio": 0.2721981524363927,
+    "unlevered_beta": 0.767419655502052
+   },
+   {
+    "industry": "Retail (Automotive)",
+    "n_firms": 34,
+    "levered_beta": 0.9360151956832995,
+    "de_ratio": 0.45355394519631387,
+    "unlevered_beta": 0.6984325625385885
+   },
+   {
+    "industry": "Retail (Building Supply)",
+    "n_firms": 14,
+    "levered_beta": 1.5353094340291733,
+    "de_ratio": 0.2328921812948963,
+    "unlevered_beta": 1.3070143643127536
+   },
+   {
+    "industry": "Retail (Distributors)",
+    "n_firms": 62,
+    "levered_beta": 0.9484338145727029,
+    "de_ratio": 0.2823636659199003,
+    "unlevered_beta": 0.7826829040437357
+   },
+   {
+    "industry": "Retail (General)",
+    "n_firms": 23,
+    "levered_beta": 0.8052405395912856,
+    "de_ratio": 0.07943684178442863,
+    "unlevered_beta": 0.7599637023048608
+   },
+   {
+    "industry": "Retail (Grocery and Food)",
+    "n_firms": 15,
+    "levered_beta": 1.1183037944931133,
+    "de_ratio": 0.5195017227110472,
+    "unlevered_beta": 0.804751465127235
+   },
+   {
+    "industry": "Retail (REITs)",
+    "n_firms": 26,
+    "levered_beta": 0.620739021744814,
+    "de_ratio": 0.5641981493610073,
+    "unlevered_beta": 0.4361730155949174
+   },
+   {
+    "industry": "Retail (Special Lines)",
+    "n_firms": 94,
+    "levered_beta": 1.0893996802924664,
+    "de_ratio": 0.19760978860946327,
+    "unlevered_beta": 0.9487830646597303
+   },
+   {
+    "industry": "Rubber& Tires",
+    "n_firms": 3,
+    "levered_beta": 0.5294301574135339,
+    "de_ratio": 3.5847235984078427,
+    "unlevered_beta": 0.14353369356004206
+   },
+   {
+    "industry": "Semiconductor",
+    "n_firms": 66,
+    "levered_beta": 1.5181994029054893,
+    "de_ratio": 0.02591104732744511,
+    "unlevered_beta": 1.48925822268736
+   },
+   {
+    "industry": "Semiconductor Equip",
+    "n_firms": 31,
+    "levered_beta": 1.3972234247394333,
+    "de_ratio": 0.04861265405817292,
+    "unlevered_beta": 1.3480733569303134
+   },
+   {
+    "industry": "Shipbuilding & Marine",
+    "n_firms": 8,
+    "levered_beta": 0.7529325380371511,
+    "de_ratio": 0.22550196647883228,
+    "unlevered_beta": 0.644012905556584
+   },
+   {
+    "industry": "Shoe",
+    "n_firms": 11,
+    "levered_beta": 1.0173183278612625,
+    "de_ratio": 0.11944728476926639,
+    "unlevered_beta": 0.9336746513867349
+   },
+   {
+    "industry": "Software (Entertainment)",
+    "n_firms": 77,
+    "levered_beta": 1.028311248084757,
+    "de_ratio": 0.02044609811708157,
+    "unlevered_beta": 1.0127806880948524
+   },
+   {
+    "industry": "Software (Internet)",
+    "n_firms": 29,
+    "levered_beta": 1.6886761161660595,
+    "de_ratio": 0.12298911343132386,
+    "unlevered_beta": 1.5460643073174678
+   },
+   {
+    "industry": "Software (System & Application)",
+    "n_firms": 309,
+    "levered_beta": 1.276648178078175,
+    "de_ratio": 0.05577131922321719,
+    "unlevered_beta": 1.225391886520662
+   },
+   {
+    "industry": "Steel",
+    "n_firms": 19,
+    "levered_beta": 1.062846247426205,
+    "de_ratio": 0.23512925389922143,
+    "unlevered_beta": 0.9035142702396447
+   },
+   {
+    "industry": "Telecom (Wireless)",
+    "n_firms": 12,
+    "levered_beta": 0.5381352736640138,
+    "de_ratio": 0.519466977505286,
+    "unlevered_beta": 0.3872590553991877
+   },
+   {
+    "industry": "Telecom. Equipment",
+    "n_firms": 57,
+    "levered_beta": 0.9232195753877382,
+    "de_ratio": 0.09222748494322085,
+    "unlevered_beta": 0.8634913488563035
+   },
+   {
+    "industry": "Telecom. Services",
+    "n_firms": 39,
+    "levered_beta": 0.6287201518745624,
+    "de_ratio": 0.9606320738181406,
+    "unlevered_beta": 0.3654342533759909
+   },
+   {
+    "industry": "Tobacco",
+    "n_firms": 10,
+    "levered_beta": 0.794314579701523,
+    "de_ratio": 0.22968502777837752,
+    "unlevered_beta": 0.6775903166712723
+   },
+   {
+    "industry": "Transportation",
+    "n_firms": 19,
+    "levered_beta": 0.8599219267913129,
+    "de_ratio": 0.3644955938376248,
+    "unlevered_beta": 0.67531101084817
+   },
+   {
+    "industry": "Transportation (Railroads)",
+    "n_firms": 4,
+    "levered_beta": 0.9751457485154854,
+    "de_ratio": 0.2779156347027222,
+    "unlevered_beta": 0.8069481235657714
+   },
+   {
+    "industry": "Trucking",
+    "n_firms": 26,
+    "levered_beta": 1.0113489285521289,
+    "de_ratio": 0.25231648451786204,
+    "unlevered_beta": 0.8504180575613394
+   },
+   {
+    "industry": "Utility (General)",
+    "n_firms": 14,
+    "levered_beta": 0.2394349278899265,
+    "de_ratio": 0.8148428973368238,
+    "unlevered_beta": 0.14861284002770483
+   },
+   {
+    "industry": "Utility (Water)",
+    "n_firms": 14,
+    "levered_beta": 0.4126827948416138,
+    "de_ratio": 0.6235944507219604,
+    "unlevered_beta": 0.281177328534438
+   },
+   {
+    "industry": "Total Market",
+    "n_firms": 5994,
+    "levered_beta": 0.9121109366553466,
+    "de_ratio": 0.3517124831873864,
+    "unlevered_beta": 0.7217298803492256
+   },
+   {
+    "industry": "Total Market (without financials)",
+    "n_firms": 4822,
+    "levered_beta": 0.9912959719564087,
+    "de_ratio": 0.17287966628456633,
+    "unlevered_beta": 0.8775172986449091
+   }
+  ]
+ },
+ "bbb_spread": {
+  "source": "Aswath Damodaran (NYU Stern) – Ratings, Interest Coverage Ratios and Default Spread (Baa2/BBB, large non-financial service firms)",
+  "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ratings.html",
+  "as_of": "January 2026",
+  "fetched_at": "2026-11-16 09:47 UTC",
+  "spread": 0.0111
+ },
+ "tax_rates": {
+  "source": "OECD Corporate Tax Statistics – combined statutory corporate income tax rate (OECD Data Explorer API)",
+  "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_TAX_CIT%40DF_CIT&df[ag]=OECD.CTP.TPS",
+  "report_url": "https://www.oecd.org/en/publications/corporate-tax-statistics-2024_9c27d6e8-en/full-report/statutory-corporate-income-tax-rates_440f9286.html",
+  "as_of": "2026",
+  "fetched_at": "2026-11-16 09:47 UTC",
+  "rates": {
+   "Colombia": {
+    "rate": 0.35,
+    "year": 2025
+   },
+   "Turkey": {
+    "rate": 0.25,
+    "year": 2025
+   },
+   "Israel": {
+    "rate": 0.23,
+    "year": 2025
+   },
+   "Democratic Republic of the Congo": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Benin": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Jersey": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "Anguilla": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "Bahamas": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "Bahrain": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "Bailiwick of Guernsey": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "Belize": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "Bermuda": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "British Virgin Islands": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "Cayman Islands": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "Isle of Man": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "Kenya": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Montserrat": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Nigeria": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Papua New Guinea": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Saint Lucia": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Senegal": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Mexico": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Sri Lanka": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Trinidad and Tobago": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Zambia": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Australia": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Gabon": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Haiti": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Costa Rica": {
+    "rate": 0.3,
+    "year": 2026
+   },
+   "Turks and Caicos Islands": {
+    "rate": 0.0,
+    "year": 2026
+   },
+   "Norway": {
+    "rate": 0.22,
+    "year": 2026
+   },
+   "Slovenia": {
+    "rate": 0.22,
+    "year": 2026
+   },
+   "Curaçao": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "Georgia": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "New Zealand": {
+    "rate": 0.28,
+    "year": 2026
+   },
+   "Botswana": {
+    "rate": 0.22,
+    "year": 2026
+   },
+   "Brazil": {
+    "rate": 0.34,
+    "year": 2026
+   },
+   "Brunei Darussalam": {
+    "rate": 0.185,
+    "year": 2026
+   },
+   "Bulgaria": {
+    "rate": 0.1,
+    "year": 2026
+   },
+   "Burkina Faso": {
+    "rate": 0.275,
+    "year": 2026
+   },
+   "Cabo Verde": {
+    "rate": 0.204,
+    "year": 2026
+   },
+   "Cameroon": {
+    "rate": 0.33,
+    "year": 2026
+   },
+   "Congo": {
+    "rate": 0.28,
+    "year": 2026
+   },
+   "Croatia": {
+    "rate": 0.18,
+    "year": 2026
+   },
+   "Dominican Republic": {
+    "rate": 0.27,
+    "year": 2026
+   },
+   "Egypt": {
+    "rate": 0.225,
+    "year": 2026
+   },
+   "Faroe Islands": {
+    "rate": 0.18,
+    "year": 2026
+   },
+   "Greenland": {
+    "rate": 0.265,
+    "year": 2026
+   },
+   "Grenada": {
+    "rate": 0.28,
+    "year": 2026
+   },
+   "Saint Kitts and Nevis": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Eswatini": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Fiji": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Guatemala": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Honduras": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Jamaica": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Bosnia and Herzegovina": {
+    "rate": 0.1,
+    "year": 2026
+   },
+   "Liberia": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Mauritania": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Monaco": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Mongolia": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Panama": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Philippines": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Seychelles": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Sierra Leone": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Uruguay": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Andorra": {
+    "rate": 0.1,
+    "year": 2026
+   },
+   "Armenia": {
+    "rate": 0.18,
+    "year": 2026
+   },
+   "Aruba": {
+    "rate": 0.22,
+    "year": 2026
+   },
+   "Barbados": {
+    "rate": 0.09,
+    "year": 2026
+   },
+   "Gibraltar": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "Albania": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "Pakistan": {
+    "rate": 0.29,
+    "year": 2026
+   },
+   "Paraguay": {
+    "rate": 0.1,
+    "year": 2026
+   },
+   "Hong Kong": {
+    "rate": 0.165,
+    "year": 2026
+   },
+   "India": {
+    "rate": 0.25170000000000003,
+    "year": 2026
+   },
+   "Indonesia": {
+    "rate": 0.22,
+    "year": 2026
+   },
+   "Liechtenstein": {
+    "rate": 0.125,
+    "year": 2026
+   },
+   "Macau": {
+    "rate": 0.12,
+    "year": 2026
+   },
+   "Malaysia": {
+    "rate": 0.24,
+    "year": 2026
+   },
+   "Moldova": {
+    "rate": 0.12,
+    "year": 2026
+   },
+   "Namibia": {
+    "rate": 0.32,
+    "year": 2026
+   },
+   "North Macedonia": {
+    "rate": 0.1,
+    "year": 2026
+   },
+   "Estonia": {
+    "rate": 0.22,
+    "year": 2026
+   },
+   "Greece": {
+    "rate": 0.22,
+    "year": 2026
+   },
+   "Poland": {
+    "rate": 0.19,
+    "year": 2026
+   },
+   "Romania": {
+    "rate": 0.16,
+    "year": 2026
+   },
+   "Saint Vincent and the Grenadines": {
+    "rate": 0.28,
+    "year": 2026
+   },
+   "Samoa": {
+    "rate": 0.27,
+    "year": 2026
+   },
+   "San Marino": {
+    "rate": 0.18,
+    "year": 2026
+   },
+   "Singapore": {
+    "rate": 0.17,
+    "year": 2026
+   },
+   "South Africa": {
+    "rate": 0.27,
+    "year": 2026
+   },
+   "Denmark": {
+    "rate": 0.22,
+    "year": 2026
+   },
+   "Montenegro": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "Kuwait": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "Maldives": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "Uzbekistan": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "Oman": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "Serbia": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "Mauritius": {
+    "rate": 0.15,
+    "year": 2026
+   },
+   "Angola": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Antigua and Barbuda": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "China": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Côte d’Ivoire": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Djibouti": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Dominica": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Chile": {
+    "rate": 0.27,
+    "year": 2026
+   },
+   "Togo": {
+    "rate": 0.27,
+    "year": 2026
+   },
+   "Ukraine": {
+    "rate": 0.18,
+    "year": 2026
+   },
+   "United Arab Emirates": {
+    "rate": 0.09,
+    "year": 2026
+   },
+   "Austria": {
+    "rate": 0.23,
+    "year": 2026
+   },
+   "Peru": {
+    "rate": 0.295,
+    "year": 2026
+   },
+   "Qatar": {
+    "rate": 0.1,
+    "year": 2026
+   },
+   "Czechia": {
+    "rate": 0.21,
+    "year": 2026
+   },
+   "France": {
+    "rate": 0.3613,
+    "year": 2026
+   },
+   "Canada": {
+    "rate": 0.26,
+    "year": 2026
+   },
+   "Ireland": {
+    "rate": 0.125,
+    "year": 2026
+   },
+   "Germany": {
+    "rate": 0.30133026,
+    "year": 2026
+   },
+   "Hungary": {
+    "rate": 0.09,
+    "year": 2026
+   },
+   "Spain": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "United Kingdom": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Belgium": {
+    "rate": 0.25,
+    "year": 2026
+   },
+   "Argentina": {
+    "rate": 0.35,
+    "year": 2026
+   },
+   "Malta": {
+    "rate": 0.35,
+    "year": 2026
+   },
+   "Morocco": {
+    "rate": 0.35,
+    "year": 2026
+   },
+   "Viet Nam": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Azerbaijan": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Cook Islands": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Jordan": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Kazakhstan": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Saudi Arabia": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Finland": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Iceland": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Latvia": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Thailand": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Tunisia": {
+    "rate": 0.2,
+    "year": 2026
+   },
+   "Lithuania": {
+    "rate": 0.17,
+    "year": 2026
+   },
+   "Luxembourg": {
+    "rate": 0.23870000000000002,
+    "year": 2026
+   },
+   "Italy": {
+    "rate": 0.2781,
+    "year": 2026
+   },
+   "Japan": {
+    "rate": 0.2974,
+    "year": 2026
+   },
+   "South Korea": {
+    "rate": 0.275,
+    "year": 2026
+   },
+   "Netherlands": {
+    "rate": 0.258,
+    "year": 2026
+   },
+   "Portugal": {
+    "rate": 0.295,
+    "year": 2026
+   },
+   "Switzerland": {
+    "rate": 0.19471871,
+    "year": 2026
+   },
+   "United States": {
+    "rate": 0.255285,
+    "year": 2026
+   },
+   "Slovakia": {
+    "rate": 0.24,
+    "year": 2026
+   },
+   "Sweden": {
+    "rate": 0.20600000000000002,
+    "year": 2026
+   }
+  }
+ },
+ "bond_yields": {
+  "source": "OECD Main Economic Indicators – long-term (10-year) government bond yields, monthly average",
+  "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_STES%40DF_FINMARK&df[ag]=OECD.SDD.STES",
+  "as_of": "2026-10",
+  "fetched_at": "2026-11-16 09:47 UTC",
+  "yields": {
+   "China": {
+    "yield": 0.0168,
+    "period": "2026-09"
+   },
+   "Hungary": {
+    "yield": 0.0557,
+    "period": "2026-10"
+   },
+   "Japan": {
+    "yield": 0.027549999999999998,
+    "period": "2026-10"
+   },
+   "Chile": {
+    "yield": 0.0605,
+    "period": "2026-10"
+   },
+   "Colombia": {
+    "yield": 0.1325,
+    "period": "2026-10"
+   },
+   "Finland": {
+    "yield": 0.03821169,
+    "period": "2026-10"
+   },
+   "Germany": {
+    "yield": 0.03415909,
+    "period": "2026-10"
+   },
+   "Greece": {
+    "yield": 0.0441,
+    "period": "2026-10"
+   },
+   "Israel": {
+    "yield": 0.0425,
+    "period": "2026-10"
+   },
+   "South Korea": {
+    "yield": 0.0421,
+    "period": "2026-10"
+   },
+   "Mexico": {
+    "yield": 0.0925,
+    "period": "2026-10"
+   },
+   "New Zealand": {
+    "yield": 0.0501,
+    "period": "2026-10"
+   },
+   "Norway": {
+    "yield": 0.04433045,
+    "period": "2026-10"
+   },
+   "Poland": {
+    "yield": 0.0632,
+    "period": "2026-10"
+   },
+   "Portugal": {
+    "yield": 0.0392,
+    "period": "2026-10"
+   },
+   "Spain": {
+    "yield": 0.04071455,
+    "period": "2026-10"
+   },
+   "Sweden": {
+    "yield": 0.0316832,
+    "period": "2026-10"
+   },
+   "Switzerland": {
+    "yield": 0.0051,
+    "period": "2026-10"
+   },
+   "United Kingdom": {
+    "yield": 0.053392999999999996,
+    "period": "2026-10"
+   },
+   "United States": {
+    "yield": 0.0513,
+    "period": "2026-10"
+   },
+   "Brazil": {
+    "yield": 0.0929,
+    "period": "2026-10"
+   },
+   "India": {
+    "yield": 0.0738,
+    "period": "2026-10"
+   },
+   "South Africa": {
+    "yield": 0.0894,
+    "period": "2026-10"
+   },
+   "Belgium": {
+    "yield": 0.0438,
+    "period": "2026-10"
+   },
+   "Costa Rica": {
+    "yield": 0.06225848,
+    "period": "2026-10"
+   },
+   "Australia": {
+    "yield": 0.052649999999999995,
+    "period": "2026-10"
+   },
+   "Canada": {
+    "yield": 0.03874762,
+    "period": "2026-10"
+   },
+   "Denmark": {
+    "yield": 0.03228,
+    "period": "2026-10"
+   },
+   "Estonia": {
+    "yield": 0.042699999999999995,
+    "period": "2026-10"
+   },
+   "Ireland": {
+    "yield": 0.035525,
+    "period": "2026-10"
+   },
+   "Latvia": {
+    "yield": 0.042800000000000005,
+    "period": "2026-10"
+   },
+   "Lithuania": {
+    "yield": 0.0288,
+    "period": "2026-10"
+   },
+   "Luxembourg": {
+    "yield": 0.03695,
+    "period": "2026-10"
+   },
+   "Netherlands": {
+    "yield": 0.03535,
+    "period": "2026-10"
+   },
+   "Slovakia": {
+    "yield": 0.04310045,
+    "period": "2026-10"
+   },
+   "Slovenia": {
+    "yield": 0.039900000000000005,
+    "period": "2026-10"
+   },
+   "Bulgaria": {
+    "yield": 0.0409,
+    "period": "2026-10"
+   },
+   "Croatia": {
+    "yield": 0.0359,
+    "period": "2026-10"
+   },
+   "Romania": {
+    "yield": 0.0677,
+    "period": "2026-10"
+   },
+   "Czechia": {
+    "yield": 0.05372491,
+    "period": "2026-10"
+   },
+   "Austria": {
+    "yield": 0.036898,
+    "period": "2026-10"
+   },
+   "Italy": {
+    "yield": 0.046799999999999994,
+    "period": "2026-10"
+   },
+   "France": {
+    "yield": 0.0489,
+    "period": "2026-10"
+   }
+  }
+ }
+}
